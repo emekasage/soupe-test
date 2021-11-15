@@ -1,0 +1,5 @@
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+  .navmenu {
+    width: 100% !important;
+  }
+}
