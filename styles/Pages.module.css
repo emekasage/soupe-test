@@ -1,0 +1,17 @@
+/*************** DASHBOARD ******************/
+.dashbg {
+  background-image: url(/assets/img/dashboard-bg.png);
+}
+
+.dashrec {
+  background-image: url(/assets/img/Patterns.png),
+    url(/assets/img/Rectangle-11.png);
+}
+
+/************** FOOD CALCULATOR ******************/
+.soupeselect > select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background: white url(/assets/img/ls_dropdown.svg) no-repeat 95% center !important;
+}

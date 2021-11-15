@@ -5,7 +5,10 @@ export default function Footer() {
     <div>
       <footer
         className="footer relative py-4 border-b-2"
-        style={{ backgroundColor: "#212429" }}
+        style={{
+          backgroundColor: "#212429",
+          fontFamily: "Open Sans, sans-serif",
+        }}
       >
         <div className="container mx-auto px-6">
           <div className="sm:flex sm:mt-8">
