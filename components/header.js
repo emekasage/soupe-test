@@ -32,7 +32,9 @@ export default function Header() {
               />
             </Link>
             {/* Nav Links */}
-            <ul className="hidden md:flex px-4 mx-auto font-normal font-heading space-x-12 text-sm text-one">
+            <ul
+              className={`hidden md:flex px-4 mx-auto font-normal font-heading space-x-12 text-sm ${navStyles.textone}`}
+            >
               <li className="text-gray-800 head-link hover:text-green-600">
                 <Link href="/preorder" style={{ color: "#23212b" }}>
                   Preorder
@@ -129,15 +131,6 @@ export default function Header() {
                       id="menu-item-1"
                     >
                       Support
-                    </a>
-                    <a
-                      href="#"
-                      className="text-gray-700 block px-4 py-2 text-sm"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-2"
-                    >
-                      License
                     </a>
                     <form method="POST" action="#" role="none">
                       <button

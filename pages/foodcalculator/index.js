@@ -54,7 +54,7 @@ function FoodCalculator() {
           {innerPage === 1 && (
             <div className="flex items-center mx-14 py-6">
               <form>
-                <div className="grid grid-cols-1 sm:gap-4 md:gap-8 lg:gap-44 mt-4 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
+                <div className="grid grid-cols-1 sm:gap-4 md:gap-8 lg:gap-8 xl:gap-44 mt-4 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
                   <div>
                     <label
                       className="text-black dark:text-gray-200 p-text"
@@ -98,7 +98,7 @@ function FoodCalculator() {
           )}
 
           {innerPage === 2 && (
-            <div className="flex items-center mx-20 py-6 spaz">
+            <div className={`flex items-center mx-20 py-6 ${pageStyles.spaz}`}>
               <form>
                 <div className="mt-4 sm:block lg:flex justify-between items-center">
                   {/* MALE PART */}
@@ -299,7 +299,7 @@ function FoodCalculator() {
           )}
 
           {innerPage === 3 && (
-            <div className="flex items-center mx-20 py-6 spaz">
+            <div className={`flex items-center mx-20 py-6 ${pageStyles.spaz}`}>
               <form>
                 <div className="mt-4 sm:block lg:flex justify-between items-center">
                   {/* FOOD TYPE */}

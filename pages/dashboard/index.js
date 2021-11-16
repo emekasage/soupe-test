@@ -211,7 +211,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <div className="mx-auto loan-btn">
+        <div className={`mx-auto ${pageStyles.loanbtn}`}>
           <button
             className="px-6 py-4 font-sans text-lg text-white"
             style={{ backgroundColor: "#4D966D", borderRadius: "40px" }}
