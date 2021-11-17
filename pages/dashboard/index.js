@@ -22,19 +22,19 @@ export default function Dashboard() {
       >
         <div className="px-8 sm:block lg:flex justify-between">
           <div className="sm:block lg:flex items-center">
-            <div className="user-w-info block">
+            <div className={`${pageStyles.user_w_info} block`}>
               <h5 className="text-xl font-bold leading-7">Hi, Dina,</h5>
-              <div className="wallet-info pt-5">
+              <div className={`${pageStyles.wallet_info} pt-5`}>
                 <p className="text-lg leading-6 font-normal">
                   Your wallet balance is
                 </p>
-                <h3 className="sm:text-lg lg:text-5xl leading-8 font-bold pt-3">
+                <h3 className="sm:text-xl md:text-2xl lg:text-5xl leading-8 font-bold pt-3">
                   ₦100,000
                 </h3>
               </div>
             </div>
           </div>
-          <div className="grocery-img -mb-1.5">
+          <div className={`${pageStyles.grocery_img} -mb-1.5`}>
             <Image
               src="/assets/img/grocery-store-food.png"
               alt="Groceries"

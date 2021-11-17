@@ -3,8 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import navStyles from "../styles/Nav.module.css";
 
-export default function Header() {
-  const [showUserInfo, setShowUserInfo] = useState(false);
+export default function HeaderNav() {
   const [showUserMobileInfo, setShowUserMobileInfo] = useState(false);
 
   return (
@@ -62,101 +61,25 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <div className="px-5 xl:px-12 py-6 flex items-center">
-            {/* Header Icons */}
-            <div className="hidden xl:flex items-center space-x-5 items-center">
-              {/* Sign In / Register */}
-              <a className="flex items-center hover:text-gray-200" href="#">
-                <Image
-                  src="/assets/img/Ellipse-1.png"
-                  alt="Display Picture"
-                  width={48}
-                  height={48}
-                />
-              </a>
-              <div className="relative inline-block text-left">
-                <div
-                  className={`user1 ${
-                    !showUserInfo
-                      ? "cursor-pointer inline-flex justify-center w-full rounded-md z-10 border border-transparent px-4 py-2 bg-transparent text-xl font-bold text-gray-700"
-                      : "cursor-pointer inline-flex justify-center w-full rounded-md z-10 border border-transparent px-4 py-2 bg-transparent text-xl font-bold text-gray-700"
-                  }`}
-                  id="menu-button"
-                  aria-expanded="true"
-                  aria-haspopup="true"
-                  onClick={() => setShowUserInfo(!showUserInfo)}
-                >
-                  Dina
-                  <svg
-                    className="-mr-1 ml-2 h-7 w-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div
-                  className={`user1 ${
-                    showUserInfo
-                      ? "origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-                      : "hidden"
-                  }`}
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="menu-button"
-                  tabIndex="-1"
-                >
-                  <div className="py-1" role="none">
-                    {/* Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" */}
-                    <a
-                      href="#"
-                      className="text-gray-700 block px-4 py-2 text-sm"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-0"
-                    >
-                      Account settings
-                    </a>
-                    <a
-                      href="#"
-                      className="text-gray-700 block px-4 py-2 text-sm"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-1"
-                    >
-                      Support
-                    </a>
-                    <form method="POST" action="#" role="none">
-                      <button
-                        type="submit"
-                        className="text-gray-700 block w-full text-left px-4 py-2 text-sm"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="menu-item-3"
-                      >
-                        Sign out
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
+          <div
+            className={`px-5 xl:px-28 py-6 flex items-center ${navStyles.navbtn}`}
+          >
+            {/* Auth CTA */}
+            <div
+              className="cursor-pointer font-bold text-lg"
+              style={{ color: "#DF421A" }}
+            >
+              <Link href="/login" passHref={true}>
+                Log in
+              </Link>
+            </div>
+            <div className="ml-6 xl:ml-10">
+              <button className="px-6 py-2.5 text-white font-bold rounded-3xl text-lg text-center bg-green-600 p-text hover:bg-white hover:text-green-600 border-0 hover:border-green-600">
+                Get started
+              </button>
             </div>
           </div>
           {/* Responsive navbar */}
-          <a className="xl:hidden flex mr-6 items-center" href="#">
-            <Image
-              src="/assets/img/Ellipse-1.png"
-              alt="Soupe Logo"
-              width={30}
-              height={30}
-            />
-          </a>
           <a
             className={`user1 ${
               !showUserMobileInfo
@@ -226,6 +149,27 @@ export default function Header() {
               >
                 Get A Loan
               </a>
+            </div>
+            <div className="py-1 md:hidden" role="none">
+              <a
+                className="text-gray-700 block px-4 py-2 text-sm"
+                role="menuitem"
+                tabIndex="-1"
+                id="menu-item-1"
+              >
+                <Link href="/login">Login</Link>
+              </a>
+              <form method="POST" action="#" role="none">
+                <button
+                  type="submit"
+                  className="text-gray-700 block w-full text-left px-4 py-2 text-sm"
+                  role="menuitem"
+                  tabIndex="-1"
+                  id="menu-item-3"
+                >
+                  <Link href="/signup">Get started</Link>
+                </button>
+              </form>
             </div>
             <div className="py-1" role="none">
               <a
