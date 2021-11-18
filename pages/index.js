@@ -19,7 +19,8 @@ export default function Home() {
         </Head>
         <HeaderNav></HeaderNav>
         <div
-          className={`md:px-8 lg:px-16 py-24 max-w-lg float-left ${pageStyles.heroo}`}
+          className={`md:px-8 lg:px-16 py-24 float-left ${pageStyles.heroo}`}
+          style={{ maxWidth: "568px" }}
         >
           <h5
             className="font-bold"
