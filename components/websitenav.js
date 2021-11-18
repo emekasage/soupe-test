@@ -15,7 +15,7 @@ export default function HeaderNav() {
         {/* navbar */}
         <nav className="flex justify-between bg-transparent text-white w-screen">
           <div
-            className={`px-5 xl:px-14 py-6 flex w-7/12 items-center ${navStyles.navmenu}`}
+            className={`px-5 xl:px-16 py-6 flex w-7/12 items-center ${navStyles.navmenu}`}
           >
             <Link
               className="text-3xl font-bold font-heading"

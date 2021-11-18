@@ -1,14 +1,15 @@
 import Head from "next/head";
-// import Image from "next/image";
+import Image from "next/image";
 import HeaderNav from "../components/websitenav";
 import Footer from "../components/footer";
 import pageStyles from "../styles/Pages.module.css";
+import FoodProducts from "../components/foodproducts";
 
 export default function Home() {
   return (
     <div>
       <div
-        className={`bg-center bg-no-repeat bg-cover overflow-x-hidden ${pageStyles.headbg}`}
+        className={`relative bg-center bg-no-repeat bg-cover overflow-hidden ${pageStyles.headbg}`}
         style={{ fontFamily: "Open Sans, sans-serif" }}
       >
         <Head>
@@ -17,22 +18,257 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <HeaderNav></HeaderNav>
-        <div className="px-14 py-20">
-          <div className="max-w-lg float-left pb-6">
-            <h5
-              className="font-bold"
-              style={{ fontSize: "50px", lineHeight: "70px" }}
+        <div
+          className={`md:px-8 lg:px-16 py-24 max-w-lg float-left ${pageStyles.heroo}`}
+        >
+          <h5
+            className="font-bold"
+            style={{ fontSize: "50px", lineHeight: "70px" }}
+          >
+            Get food items from the farm to your kitchen
+          </h5>
+          <p className="my-6 font-normal text-lg">
+            Join Soupe the cheapest food community as a consumer, farmer and
+            access instant food credit, food planning and flexible
+            delivery/pickup.
+          </p>
+          <div className="flex items-center">
+            <button className="px-6 py-2.5 text-white font-bold rounded-3xl text-lg text-center bg-green-600 p-text hover:bg-white hover:text-green-600 border-0 hover:border-green-600">
+              Get started
+            </button>
+            <button
+              className="font-bold text-xl ml-6"
+              style={{ color: "#DF421A" }}
             >
-              Get food items from the farm to your kitchen
-            </h5>
-            <p className="my-6 font-normal text-lg">
-              Join Soupe the cheapest food community as a consumer, farmer and
-              access instant food credit, food planning and flexible
-              delivery/pickup.
-            </p>
-            <div className="flex items-center">
+              Plan Meal
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`lg:py-10 xl:py-24 bg-center bg-no-repeat bg-cover overflow-x-hidden ${pageStyles.usect}`}
+        style={{
+          background: "#E5E5E5",
+        }}
+      ></div>
+      <div
+        className={`absolute ${pageStyles.heroimg}`}
+        style={{ right: "100px", top: "170px" }}
+      >
+        <Image
+          src="/assets/img/Rectangle_2039.png"
+          alt="Soupe Logo"
+          width={570}
+          height={738}
+        />
+      </div>
+      <div
+        className="bg-center bg-no-repeat bg-cover overflow-x-hidden"
+        style={{
+          background: "#E5E5E5",
+          fontFamily: "Open Sans, sans-serif",
+        }}
+      >
+        <div className={`pt-28 pb-8 pl-16 pr-20 ${pageStyles.partwo}`}>
+          <div className="flex justify-between items-center">
+            <h6 className="text-2xl font-bold">Top Selling</h6>
+            <a className="inline-flex flex items-center pr-6" href="#">
+              <span
+                className="text-base font-normal"
+                style={{ color: "#800015" }}
+              >
+                View more
+              </span>
+              <svg
+                className="ml-3"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.172 6.99968L6.808 1.63568L8.222 0.22168L16 7.99968L8.222 15.7777L6.808 14.3637L12.172 8.99968H0V6.99968H12.172Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </div>
+          <svg
+            width="31"
+            height="2"
+            viewBox="0 0 31 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="31" height="2" fill="#800015" />
+          </svg>
+          <FoodProducts></FoodProducts>
+        </div>
+        <div className={`pl-16 pr-20 pb-16 ${pageStyles.partwo}`}>
+          <div className="flex justify-between items-center">
+            <h6 className="text-2xl font-bold">Featured Products</h6>
+            <a className="inline-flex flex items-center pr-6" href="#">
+              <span
+                className="text-base font-normal"
+                style={{ color: "#800015" }}
+              >
+                View more
+              </span>
+              <svg
+                className="ml-3"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.172 6.99968L6.808 1.63568L8.222 0.22168L16 7.99968L8.222 15.7777L6.808 14.3637L12.172 8.99968H0V6.99968H12.172Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </div>
+          <svg
+            width="31"
+            height="2"
+            viewBox="0 0 31 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="31" height="2" fill="#800015" />
+          </svg>
+          <FoodProducts></FoodProducts>
+        </div>
+        {/* CONSUMER SECTION */}
+        <div className="pt-16 pb-24 pl-16 pr-20 flex justify-between items-center">
+          <div className="max-w-xl">
+            <h4 className="font-bold" style={{ fontSize: "40px" }}>
+              Consumer
+            </h4>
+            <div className="points flex flex-col">
+              <div className="flex justify-between pt-3">
+                <div>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96451 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272Z"
+                      fill="#DF421A"
+                    />
+                  </svg>
+                </div>
+                <p className="text-lg font-normal pl-6">
+                  Our offers are for Individuals, Households, Event Hosts, Food
+                  Service professionals, Restaurants.
+                </p>
+              </div>
+              <div className="inline-flex pt-2.5">
+                <div>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96451 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272Z"
+                      fill="#DF421A"
+                    />
+                  </svg>
+                </div>
+                <p className="text-lg font-normal pl-6">
+                  Preorder food or save for future food consumptions.
+                </p>
+              </div>
+              <div className="flex justify-between pt-2.5">
+                <div>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96451 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272Z"
+                      fill="#DF421A"
+                    />
+                  </svg>
+                </div>
+                <p className="text-lg font-normal pl-6">
+                  Get orders deliver to you anytime or pickup in our closest
+                  Consumer Experience Centre.
+                </p>
+              </div>
+              <div className="flex justify-between pt-2.5">
+                <div>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96451 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272Z"
+                      fill="#DF421A"
+                    />
+                  </svg>
+                </div>
+                <p className="text-lg font-normal pl-6">
+                  Plan your daily/weekly/monthly family meal. Calculate the
+                  amount of food for a period or an event.
+                </p>
+              </div>
+              <div className="inline-flex pt-2.5">
+                <div>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96451 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272Z"
+                      fill="#DF421A"
+                    />
+                  </svg>
+                </div>
+                <p className="text-lg font-normal pl-6">
+                  Compare food prices across major market in your locality.
+                </p>
+              </div>
+              <div className="inline-flex pt-2.5">
+                <div>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 0.25C8.07164 0.25 6.18657 0.821828 4.58319 1.89317C2.97982 2.96451 1.73013 4.48726 0.992179 6.26884C0.254225 8.05042 0.061142 10.0108 0.437348 11.9021C0.813554 13.7934 1.74215 15.5307 3.10571 16.8943C4.46928 18.2579 6.20656 19.1865 8.09787 19.5627C9.98919 19.9389 11.9496 19.7458 13.7312 19.0078C15.5127 18.2699 17.0355 17.0202 18.1068 15.4168C19.1782 13.8134 19.75 11.9284 19.75 10C19.747 7.41506 18.7188 4.93684 16.891 3.10901C15.0632 1.28118 12.5849 0.252988 10 0.25ZM14.6436 8.29272L9.14307 13.5427C9.00322 13.6758 8.81756 13.75 8.62452 13.75C8.43147 13.75 8.24582 13.6758 8.10596 13.5427L5.35645 10.9177C5.2128 10.7801 5.12965 10.5911 5.12524 10.3923C5.12084 10.1934 5.19555 10.0009 5.33297 9.8571C5.47038 9.71328 5.65927 9.62989 5.85813 9.62523C6.05699 9.62058 6.24956 9.69504 6.39356 9.83228L8.62452 11.9629L13.6064 7.20728C13.7504 7.07004 13.943 6.99558 14.1419 7.00023C14.3407 7.00489 14.5296 7.08828 14.667 7.2321C14.8045 7.37592 14.8792 7.56841 14.8748 7.76727C14.8704 7.96614 14.7872 8.15513 14.6436 8.29272Z"
+                      fill="#DF421A"
+                    />
+                  </svg>
+                </div>
+                <p className="text-lg font-normal pl-6">
+                  Get affordable food Loan.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center pt-6">
               <button className="px-6 py-2.5 text-white font-bold rounded-3xl text-lg text-center bg-green-600 p-text hover:bg-white hover:text-green-600 border-0 hover:border-green-600">
-                Get started
+                Preorder
               </button>
               <button
                 className="font-bold text-xl ml-6"
@@ -42,9 +278,16 @@ export default function Home() {
               </button>
             </div>
           </div>
+          <div className="max-w-md">
+            <Image
+              src="/assets/img/Group-3605.png"
+              alt="Soupe Logo"
+              width={582}
+              height={485}
+            />
+          </div>
         </div>
       </div>
-      <div></div>
       <Footer></Footer>
     </div>
   );

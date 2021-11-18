@@ -21,7 +21,24 @@
   background: white url(/assets/img/ls_dropdown.svg) no-repeat 95% center !important;
 }
 
+/************ SIGN UP PAGE ***************/
+.signcard {
+  box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+}
+
+.signcard:hover {
+  border: 1px solid #4d966d;
+  background: rgba(77, 150, 109, 0.2);
+}
+
 /********* MEDIA QUERIES *********/
+@media only screen and (max-width: 1025px) and (min-width: 768px) {
+  .heroimg img {
+    width: 500px !important;
+    left: 80px !important;
+  }
+}
+
 @media only screen and (max-width: 1022px) and (min-width: 768px) {
   .otherpg {
     background-size: 315px, 454px !important;
@@ -37,6 +54,16 @@
 
   .mobform {
     margin-top: 1rem;
+  }
+
+  .heroimg {
+    right: 20px !important;
+    top: 140px !important;
+  }
+
+  .heroimg img {
+    width: 500px !important;
+    left: 220px !important;
   }
 }
 
@@ -140,6 +167,32 @@
     margin-left: 1.75rem;
     margin-bottom: 0.825rem;
   }
+
+  .heroo {
+    padding: 15px 0 45px 15px !important;
+  }
+
+  .usect {
+    padding-top: 430px;
+  }
+
+  .partwo {
+    padding-left: 3rem !important;
+    padding-right: 2.5rem !important;
+  }
+
+  .heroimg {
+    right: 0px !important;
+    top: 500px !important;
+  }
+
+  .food_card {
+    margin: 0 auto !important;
+  }
+
+  .food_card div {
+    width: 17rem !important;
+  }
 }
 
 @media only screen and (max-width: 398px) {
@@ -159,5 +212,31 @@
 
   .signcard {
     margin: 0.5rem 0.825rem;
+  }
+
+  .heroo {
+    padding: 15px 0 45px 10px !important;
+  }
+
+  .usect {
+    padding-top: 400px;
+  }
+
+  .partwo {
+    padding-left: 3rem !important;
+    padding-right: 2.5rem !important;
+  }
+
+  .heroimg {
+    right: 0px !important;
+    top: 530px !important;
+  }
+
+  .food_card {
+    margin: 0px 0px 0px 2px !important;
+  }
+
+  .food_card div {
+    width: 17rem !important;
   }
 }
