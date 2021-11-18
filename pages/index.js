@@ -288,6 +288,82 @@ export default function Home() {
             />
           </div>
         </div>
+        <div
+          className="bg-center bg-no-repeat bg-cover overflow-x-hidden mb-20 py-20 pl-16 pr-20 flex justify-between items-center"
+          style={{ backgroundColor: "#FECE51" }}
+        >
+          <div className="max-w-lg">
+            <Image
+              src="/assets/img/BG.png"
+              alt="Soupe Logo"
+              width={540}
+              height={540}
+            />
+          </div>
+          <div className="max-w-lg">
+            <h4 className="font-bold" style={{ fontSize: "40px" }}>
+              Consumer Experience Centre
+            </h4>
+            <p className="text-lg font-normal py-3">
+              Do you have a space in your house/warehouse to accommodate our
+              consumer experience centre?
+            </p>
+            <div className="flex items-center pt-4">
+              <button className="px-6 py-2.5 text-white font-bold rounded-3xl text-lg text-center bg-green-600 p-text hover:bg-white hover:text-green-600 border-0 hover:border-green-600">
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="pt-16 pb-24 pl-16 pr-20 flex justify-between items-center">
+          <div className="max-w-xl">
+            <h4 className="font-bold" style={{ fontSize: "40px" }}>
+              Are you a farmer?
+            </h4>
+            <p className="text-lg font-normal py-3">
+              Do you desire to make more money while reducing food wastage in
+              your farm?
+              <br />
+              <br /> Join the biggest food market and sell directly to ready
+              customers while you enjoy access to extension services at no cost
+            </p>
+            <div className="flex items-center pt-6">
+              <button className="px-6 py-2.5 text-white font-bold rounded-3xl text-lg text-center bg-green-600 p-text hover:bg-white hover:text-green-600 border-0 hover:border-green-600">
+                Start selling
+              </button>
+            </div>
+          </div>
+          <div className="max-w-lg">
+            <Image
+              src="/assets/img/image-54.png"
+              alt="Soupe Logo"
+              width={565}
+              height={457}
+            />
+          </div>
+        </div>
+        <div className="mt-16 mb-24 ml-16 mr-20">
+          <div
+            className="flex justify-around items-center py-10 px-10"
+            style={{ background: "#DF421A", borderRadius: "24px" }}
+          >
+            <div className={`bg-center bg-no-repeat ${pageStyles.adimg}`}>
+              <Image
+                src="/assets/img/image-53.png"
+                alt="Soupe Logo"
+                width={548}
+                height={365}
+              />
+            </div>
+            <div className="max-w-sm">
+              <h4 className="text-5xl font-bold text-white">Need a loan?</h4>
+              <p className="text-lg font-normal text-white py-4">
+                Get food credit at the lowest interest rate from our partnered
+                credit lenders
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer></Footer>
     </div>

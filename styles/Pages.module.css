@@ -3,6 +3,10 @@
   background-image: url(/assets/img/Header_Background.png);
 }
 
+.adimg {
+  background-image: url(/assets/img/Pattern.png);
+}
+
 /*************** DASHBOARD ******************/
 .dashbg {
   background-image: url(/assets/img/dashboard-bg.png);
