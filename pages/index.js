@@ -143,8 +143,8 @@ export default function Home() {
           <FoodProducts></FoodProducts>
         </div>
         {/* CONSUMER SECTION */}
-        <div className="pt-16 pb-24 pl-16 pr-20 flex justify-between items-center">
-          <div className="max-w-xl">
+        <div className="pt-16 pb-24 pl-16 pr-20 sm:block md:flex justify-between items-center">
+          <div className={`max-w-xl ${pageStyles.leftpdsm}`}>
             <h4 className="font-bold" style={{ fontSize: "40px" }}>
               Consumer
             </h4>
@@ -289,7 +289,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          className="bg-center bg-no-repeat bg-cover overflow-x-hidden mb-20 py-20 pl-16 pr-20 flex justify-between items-center"
+          className="bg-center bg-no-repeat bg-cover overflow-x-hidden mb-20 py-20 pl-16 pr-20 sm:block md:flex justify-between items-center"
           style={{ backgroundColor: "#FECE51" }}
         >
           <div className="max-w-lg">
@@ -300,7 +300,7 @@ export default function Home() {
               height={540}
             />
           </div>
-          <div className="max-w-lg">
+          <div className={`max-w-lg ${pageStyles.rightpad}`}>
             <h4 className="font-bold" style={{ fontSize: "40px" }}>
               Consumer Experience Centre
             </h4>
@@ -315,8 +315,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="pt-16 pb-24 pl-16 pr-20 flex justify-between items-center">
-          <div className="max-w-xl">
+        <div className="pt-16 pb-24 pl-16 pr-20 sm:block md:flex justify-between items-center">
+          <div className={`max-w-xl ${pageStyles.leftpad}`}>
             <h4 className="font-bold" style={{ fontSize: "40px" }}>
               Are you a farmer?
             </h4>
@@ -344,7 +344,7 @@ export default function Home() {
         </div>
         <div className="mt-16 mb-24 ml-16 mr-20">
           <div
-            className="flex justify-around items-center py-10 px-10"
+            className="sm:block md:flex justify-around items-center py-10 px-10"
             style={{ background: "#DF421A", borderRadius: "24px" }}
           >
             <div className={`bg-center bg-no-repeat ${pageStyles.adimg}`}>
@@ -355,7 +355,7 @@ export default function Home() {
                 height={365}
               />
             </div>
-            <div className="max-w-sm">
+            <div className={`max-w-sm ${pageStyles.loanpd}`}>
               <h4 className="text-5xl font-bold text-white">Need a loan?</h4>
               <p className="text-lg font-normal text-white py-4">
                 Get food credit at the lowest interest rate from our partnered

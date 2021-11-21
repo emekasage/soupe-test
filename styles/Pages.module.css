@@ -36,6 +36,17 @@
 }
 
 /********* MEDIA QUERIES *********/
+@media only screen and (max-width: 1278px) and (min-width: 1024px) {
+  .rightpad {
+    padding-left: 6rem;
+  }
+  .leftpad {
+    padding-right: 6rem;
+  }
+  .leftpdsm {
+    padding-right: 2rem;
+  }
+}
 @media only screen and (max-width: 1025px) and (min-width: 768px) {
   .heroimg img {
     width: 500px !important;
@@ -47,6 +58,14 @@
   .otherpg {
     background-size: 315px, 454px !important;
     background-position: right 210px !important;
+  }
+
+  .leftpdsm {
+    padding-right: 1rem;
+  }
+
+  .rightpad {
+    padding-left: 1rem;
   }
 }
 
@@ -155,6 +174,16 @@
 
   .mobheading p {
     font-size: 18px;
+  }
+
+  .leftpdsm,
+  .leftpad {
+    padding-bottom: 2rem;
+  }
+
+  .rightpad,
+  .loanpd {
+    padding-top: 1rem;
   }
 }
 
