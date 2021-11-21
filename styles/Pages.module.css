@@ -185,6 +185,16 @@
   .loanpd {
     padding-top: 1rem;
   }
+
+  .sectpd {
+    padding-left: 2.7rem !important;
+    padding-right: 3rem !important;
+  }
+
+  .admr {
+    margin-left: 2.7rem;
+    margin-right: 3rem;
+  }
 }
 
 @media only screen and (max-width: 640px) and (min-width: 400px) {

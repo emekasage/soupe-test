@@ -143,7 +143,9 @@ export default function Home() {
           <FoodProducts></FoodProducts>
         </div>
         {/* CONSUMER SECTION */}
-        <div className="pt-16 pb-24 pl-16 pr-20 sm:block md:flex justify-between items-center">
+        <div
+          className={`pt-16 pb-24 pl-16 pr-20 sm:block md:flex justify-between items-center ${pageStyles.sectpd}`}
+        >
           <div className={`max-w-xl ${pageStyles.leftpdsm}`}>
             <h4 className="font-bold" style={{ fontSize: "40px" }}>
               Consumer
@@ -289,7 +291,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          className="bg-center bg-no-repeat bg-cover overflow-x-hidden mb-20 py-20 pl-16 pr-20 sm:block md:flex justify-between items-center"
+          className={`bg-center bg-no-repeat bg-cover overflow-x-hidden mb-20 py-20 pl-16 pr-20 sm:block md:flex justify-between items-center ${pageStyles.sectpd}`}
           style={{ backgroundColor: "#FECE51" }}
         >
           <div className="max-w-lg">
@@ -315,7 +317,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="pt-16 pb-24 pl-16 pr-20 sm:block md:flex justify-between items-center">
+        <div
+          className={`pt-16 pb-24 pl-16 pr-20 sm:block md:flex justify-between items-center ${pageStyles.sectpd}`}
+        >
           <div className={`max-w-xl ${pageStyles.leftpad}`}>
             <h4 className="font-bold" style={{ fontSize: "40px" }}>
               Are you a farmer?
@@ -342,7 +346,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="mt-16 mb-24 ml-16 mr-20">
+        <div className={`mt-16 mb-24 ml-16 mr-20 ${pageStyles.admr}`}>
           <div
             className="sm:block md:flex justify-around items-center py-10 px-10"
             style={{ background: "#DF421A", borderRadius: "24px" }}
