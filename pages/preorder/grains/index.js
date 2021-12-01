@@ -1,9 +1,10 @@
 // import { useRouter } from "next/router";
-import Header from "../../components/header";
-import Footer from "../../components/footer";
+import Header from "../../../components/header";
+import Footer from "../../../components/footer";
 import Head from "next/head";
 import Image from "next/image";
-import pageStyles from "../../styles/Pages.module.css";
+import pageStyles from "../../../styles/Pages.module.css";
+import Link from "next/link";
 
 function Grains() {
   // const router = useRouter();
@@ -105,15 +106,17 @@ function Grains() {
           </div>
           <div className="flex justify-center grid grid-cols-1 gap-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-14 py-4">
             <div className="food-card">
-              <div className="relative w-64 h-64 py-6 bg-white bg-cover bg-center rounded-2xl transition duration-300 ease-in-out transform hover:scale-95">
-                <a href="#" className="flex justify-center">
-                  <Image
-                    src="/assets/img/image-7.png"
-                    alt="rice"
-                    width={236}
-                    height={177}
-                  />
-                </a>
+              <div className="relative w-64 h-64 py-6 bg-white bg-cover bg-center rounded-2xl transition duration-300 ease-in-out transform hover:scale-95 cursor-pointer">
+                <Link href="/preorder/grains/rice" passHref={true}>
+                  <div className="flex justify-center">
+                    <Image
+                      src="/assets/img/image-7.png"
+                      alt="rice"
+                      width={236}
+                      height={177}
+                    />
+                  </div>
+                </Link>
               </div>
               <p className="p-text text-xl font-normal py-2.5">Rice</p>
             </div>
