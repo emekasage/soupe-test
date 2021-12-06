@@ -1,7 +1,6 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Head from "next/head";
-// import Image from "next/image";
 import { useState } from "react";
 import pageStyles from "../../styles/Pages.module.css";
 
@@ -10,7 +9,7 @@ function FoodCalculator() {
   return (
     <div style={{ fontFamily: "Open Sans, sans-serif" }}>
       <Head>
-        <title>Food Calculator</title>
+        <title>Soupe - Food Calculator</title>
         <meta name="keywords" content="Preorder, Grains, Vegetables"></meta>
       </Head>
 

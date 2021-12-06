@@ -25,6 +25,13 @@
   background: white url(/assets/img/ls_dropdown.svg) no-repeat 95% center !important;
 }
 
+.compare_select > select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background: white url(/assets/img/ls_dropdown.svg) no-repeat 95% center !important;
+}
+
 /************ SIGN UP PAGE ***************/
 .signcard {
   box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
@@ -155,6 +162,10 @@
 }
 
 @media only screen and (max-width: 640px) {
+  .other_pgs {
+    height: 530px !important;
+  }
+
   .otherpg {
     background-size: 345px, 454px !important;
     background-position: right 225px !important;
@@ -301,6 +312,15 @@
   .cement_imgs {
     padding: 0.8rem 2.2rem;
   }
+
+  .compare_select {
+    width: 120px !important;
+    right: 50px;
+  }
+
+  .pie_stats {
+    margin-left: 1rem !important;
+  }
 }
 
 @media only screen and (max-width: 398px) {
@@ -358,5 +378,22 @@
 
   .cement_imgs {
     padding: 0.8rem 1.2rem;
+  }
+
+  .walletpg {
+    margin: 0 1.5rem !important;
+  }
+
+  .compare_select {
+    width: 120px !important;
+    right: 75px;
+  }
+
+  .pie_chart {
+    margin-left: -1rem;
+  }
+
+  .pie_stats {
+    margin-left: 1rem;
   }
 }
