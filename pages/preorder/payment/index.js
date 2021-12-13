@@ -5,6 +5,7 @@ import Head from "next/head";
 import pageStyles from "../../../styles/Pages.module.css";
 import Link from "next/link";
 import { useState } from "react";
+import Modal from "../../../components/modal";
 
 function Payment() {
   // const router = useRouter();
@@ -15,6 +16,7 @@ function Payment() {
   // fetch the food types with foodType
 
   const [showCardForm, setShowCardForm] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div>
@@ -68,7 +70,7 @@ function Payment() {
             minHeight: "1000px",
           }}
         >
-          <div className={`mx-14 py-14 ${pageStyles.paymentpg}`}>
+          <div className={`mx-10 md:mx-14 py-14 ${pageStyles.paymentpg}`}>
             <div className="sm:block md:flex justify-between">
               <div className="md:w-2/5">
                 <h5 className="text-xl font-bold">Order Summary</h5>
@@ -372,6 +374,7 @@ function Payment() {
               <button
                 className="px-10 py-2.5 text-white text-lg font-bold rounded-3xl block"
                 style={{ backgroundColor: "#4D966D" }}
+                onClick={() => setShowModal(true)}
               >
                 Pay
               </button>
@@ -380,6 +383,14 @@ function Payment() {
         </div>
       </div>
       <Footer></Footer>
+      <Modal show={showModal} setShowModal={setShowModal}>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry&#39;s standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged.
+      </Modal>
     </div>
   );
 }

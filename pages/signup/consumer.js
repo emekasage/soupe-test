@@ -114,7 +114,7 @@ export default function Consumer() {
                 style={{ borderColor: "#8692A6" }}
               />
             </div>
-            <div className="mb-3" x-data="{ show: true }">
+            <div className="mb-3">
               <label
                 htmlFor="email"
                 className="block mb-2 text-base"

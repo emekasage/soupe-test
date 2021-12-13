@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import navStyles from "../styles/Nav.module.css";
 
-export default function Header() {
+export default function CreditHeader() {
   const [showUserInfo, setShowUserInfo] = useState(false);
   const [showUserMobileInfo, setShowUserMobileInfo] = useState(false);
 
@@ -36,28 +36,29 @@ export default function Header() {
               className={`hidden md:flex px-4 mx-auto font-normal font-heading space-x-12 text-sm ${navStyles.textone}`}
             >
               <li className="text-gray-800 head-link hover:text-green-600">
-                <Link href="/preorder" style={{ color: "#23212b" }}>
-                  Preorder
+                <Link
+                  href="/credit/credit-request"
+                  style={{ color: "#23212b" }}
+                >
+                  Credit Request
                 </Link>
               </li>
               <li className="text-gray-800 hover:text-green-600">
-                <Link href="/foodcalculator" style={{ color: "#23212b" }}>
-                  Calculate Food
-                </Link>
-              </li>
-              <li className="text-gray-800 hover:text-green-600">
-                <Link href="/compare-prices" style={{ color: "#23212b" }}>
-                  Compare Price
-                </Link>
-              </li>
-              <li className="text-gray-800 hover:text-green-600">
-                <Link href="/loan" style={{ color: "#23212b" }}>
-                  Get A Loan
+                <Link
+                  href="/credit/credit-disbursed"
+                  style={{ color: "#23212b" }}
+                >
+                  Credit Disbursed
                 </Link>
               </li>
               <li>
                 <a className="text-gray-800 hover:text-green-600" href="#">
-                  Account
+                  Credit Offers
+                </a>
+              </li>
+              <li>
+                <a className="text-gray-800 hover:text-green-600" href="#">
+                  Add New Credit Offers
                 </a>
               </li>
             </ul>
@@ -130,7 +131,7 @@ export default function Header() {
                       tabIndex="-1"
                       id="menu-item-1"
                     >
-                      <Link href="/support">Support</Link>
+                      Support
                     </a>
                     <form method="POST" action="#" role="none">
                       <button
@@ -198,7 +199,7 @@ export default function Header() {
                 tabIndex="-1"
                 id="menu-item-0"
               >
-                <Link href="/preorder">Preorder</Link>
+                <Link href="/preorder">Credit Request</Link>
               </a>
               <a
                 className="text-gray-700 block px-4 py-2 text-sm"
@@ -206,16 +207,7 @@ export default function Header() {
                 tabIndex="-1"
                 id="menu-item-0"
               >
-                <Link href="/foodcalculator">Calculate Food</Link>
-              </a>
-              <a
-                href="#"
-                className="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabIndex="-1"
-                id="menu-item-0"
-              >
-                <Link href="/compare-prices">Compare Prices</Link>
+                <Link href="/foodcalculator">Credit Disbursed</Link>
               </a>
               <a
                 href="#"
@@ -224,7 +216,16 @@ export default function Header() {
                 tabIndex="-1"
                 id="menu-item-0"
               >
-                <Link href="/loan">Get A Loan</Link>
+                Credit Offers
+              </a>
+              <a
+                href="#"
+                className="text-gray-700 block px-4 py-2 text-sm"
+                role="menuitem"
+                tabIndex="-1"
+                id="menu-item-0"
+              >
+                Add New Credit Offers
               </a>
             </div>
             <div className="py-1" role="none">
@@ -244,7 +245,7 @@ export default function Header() {
                 tabIndex="-1"
                 id="menu-item-1"
               >
-                <Link href="/support">Support</Link>
+                Support
               </a>
               <form method="POST" action="#" role="none">
                 <button

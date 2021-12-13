@@ -1,12 +1,10 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Head from "next/head";
-import { useState } from "react";
 import pageStyles from "../../styles/Pages.module.css";
 import Link from "next/link";
 
 function Wallet() {
-  const [innerPage, setInnerPage] = useState(1);
   return (
     <div style={{ fontFamily: "Open Sans, sans-serif" }}>
       <Head>
@@ -134,7 +132,6 @@ function Wallet() {
                 <button
                   className="font-bold text-xl mt-12"
                   style={{ color: "#DF421A" }}
-                  onClick={() => setInnerPage(2)}
                 >
                   Take a Loan
                 </button>

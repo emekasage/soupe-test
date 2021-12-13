@@ -14,16 +14,16 @@ function FoodCalculator() {
       </Head>
 
       <div
-        className="overflow-hidden z-0 other-pg"
+        className={`overflow-hidden z-0 ${pageStyles.other_pgs}`}
         style={{
           backgroundColor: "#F2C94C",
           height: "597px",
         }}
       >
         <Header></Header>
-        <div className="sm:block md:flex justify-between mx-14 sm:my-10 md:my-20">
+        <div className="sm:block md:flex justify-between mx-14 my-4 md:my-20">
           <div className="head-txt">
-            <h1 className="text-6xl font-bold big-txt sm:pt-14 md:pt-20">
+            <h1 className="text-6xl font-bold big-txt pt-11 md:pt-20">
               Food Calculator
             </h1>
             <p className="font-normal text-2xl leading-8 md:w-4/6 lg:w-auto py-6">
